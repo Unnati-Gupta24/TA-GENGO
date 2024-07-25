@@ -38,7 +38,7 @@ body {
 .navbar .toggle-btn {
     display: none;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
         float: right;
@@ -72,6 +72,13 @@ body {
     }
     .flip-card{
         margin-bottom: 10vh;
+        width: 80vw;
+        margin-left: 20vw;
+        max-height: 250px;
+    }
+    .att{
+        display: flex;
+        flex-direction: column;
     }
     .jio{
         margin-left: -50px;
@@ -88,7 +95,7 @@ body {
 .flip-card {
     background: transparent;
     width: 300px;
-    height: 50vh;
+    height: 300px;
     perspective: 1000px;
 }
 .flip-card-inner {
@@ -190,6 +197,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 90vh;
+    width: 100vw;
     font-family: Arial, sans-serif;
     flex-wrap: wrap;
 background: #333333;
@@ -380,6 +388,7 @@ background: linear-gradient(0deg, #333333, #010101);
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 100vw;
 }
 .foxo{
     background-image: url("./images/foxy.png");
