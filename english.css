@@ -67,3 +67,12 @@ body{
     opacity: 0.5;
     transform: scale(0.9);
 }
+
+@media only screen and (max-width: 600px) {
+  .set{
+      margin-top: 500px;
+  }
+  #title{
+      margin: 20px;
+  }
+}
