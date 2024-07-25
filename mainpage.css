@@ -38,7 +38,7 @@ body {
 .navbar .toggle-btn {
     display: none;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 400px) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
         float: right;
