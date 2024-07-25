@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <title>English Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <form id="quizform">
+        <h1>Japanese Quiz</h1>
+        <div class="question">
+            <p>1. What is the correct translation for "telephone"?</p>
+            <label><input type="radio" name="q1" value="a"> a. 傘</label><br>
+            <label><input type="radio" name="q1" value="b"> b. 自転車</label><br>
+            <label><input type="radio" name="q1" value="c"> c. 水</label><br>
+            <label><input type="radio" name="q1" value="d"> d. 電話</label>
+        </div>
+        <div class="question">
+            <p>2. What is the correct translation for "Good Morning"?</p>
+            <label><input type="radio" name="q2" value="a"> a. ヨーヨー</label><br>
+            <label><input type="radio" name="q2" value="b"> b. 電話</label><br>
+            <label><input type="radio" name="q2" value="c"> c. おはよう</label><br>
+            <label><input type="radio" name="q2" value="d"> d. バイオリン</label>
+        </div>
+        <div class="question">
+            <p>3. What is the correct translation for "Good night"?</p>
+            <label><input type="radio" name="q3" value="a"> a. 善良さ</label><br>
+            <label><input type="radio" name="q3" value="b"> b. おはよう</label><br>
+            <label><input type="radio" name="q3" value="c"> c. おやすみ</label><br>
+            <label><input type="radio" name="q3" value="d"> d. 別れ</label>
+        </div>
+        <div class="question">
+            <p>4. What is the correct translation for "hello"?</p>
+            <label><input type="radio" name="q4" value="a"> a. こんにちは</label><br>
+            <label><input type="radio" name="q4" value="b"> b. 別れ</label><br>
+            <label><input type="radio" name="q4" value="c"> c. 外国人</label><br>
+            <label><input type="radio" name="q4" value="d"> d. 善良さ</label>
+        </div>
+        <div class="question">
+            <p>5. What is the correct translation for "boy"?</p>
+            <label><input type="radio" name="q5" value="a"> a. 女の子</label><br>
+            <label><input type="radio" name="q5" value="b"> b. 男の子</label><br>
+            <label><input type="radio" name="q5" value="c"> c. 善良さ</label><br>
+            <label><input type="radio" name="q5" value="d"> d. 悪い</label>
+        </div>
+        <div class="question">
+            <p>6. What is the correct translation for "life"?</p>
+            <label><input type="radio" name="q6" value="a"> a. 人生</label><br>
+            <label><input type="radio" name="q6" value="b"> b. 善良さ</label><br>
+            <label><input type="radio" name="q6" value="c"> c. おはよう</label><br>
+            <label><input type="radio" name="q6" value="d"> d. 時計</label>
+        </div>
+        <div class="question">
+            <p>7. What is the correct translation for "human"?</p>
+            <label><input type="radio" name="q7" value="a"> a. 人間</label><br>
+            <label><input type="radio" name="q7" value="b"> b. 人生</label><br>
+            <label><input type="radio" name="q7" value="c"> c. 時計</label><br>
+            <label><input type="radio" name="q7" value="d"> d. 犬</label>
+        </div>
+        <div class="question">
+            <p>8. What is the correct translation for "dog"?</p>
+            <label><input type="radio" name="q8" value="a"> a. 動物</label><br>
+            <label><input type="radio" name="q8" value="b"> b. 時計</label><br>
+            <label><input type="radio" name="q8" value="c"> c. 傘</label><br>
+            <label><input type="radio" name="q8" value="d"> d. 犬</label>
+        </div>
+        <div class="question">
+            <p>9. What is the correct translation for "bye"?</p>
+            <label><input type="radio" name="q9" value="a"> a. おやすみ</label><br>
+            <label><input type="radio" name="q9" value="b"> b. さよなら</label><br>
+            <label><input type="radio" name="q9" value="c"> c. 動物</label><br>
+            <label><input type="radio" name="q9" value="d"> d. 人間</label>
+        </div>
+        <div class="question">
+            <p>10. What is the correct translation for "multilingual"?</p>
+            <label><input type="radio" name="q10" value="a"> a. バイリンガル</label><br>
+            <label><input type="radio" name="q10" value="b"> b. 多言語</label><br>
+            <label><input type="radio" name="q10" value="c"> c. 言語</label><br>
+            <label><input type="radio" name="q10" value="d"> d. 聖なる</label>
+        </div>
+        <button class="buton" type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+    <div id="results" class="results"></div>
+    <script src="quizeng.js"></script>
+</body>
+</html>

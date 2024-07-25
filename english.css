@@ -1,0 +1,69 @@
+body{
+    background-image: url("./images/gh.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.set{
+    margin: 10% auto;
+    margin-left: 23vw;
+    margin-top: -5vh;
+    margin-right: 17vw;
+}
+#title{
+    color: white;
+   text-align: center;
+    margin-top: 10vh;
+    font-size: 80px;
+    font-weight: bolder;
+    text-shadow: 0 0 5px #00f7ff, 0 0 15px #14e7f6, 0 0 20px #14e7f6, 0 0 40px #14e7f6, 0 0 60px #08f4cc, 0 0 10px#14e7f6 , 0 0 98px #0af9da;
+    color: #d9d8d1;
+  font-family: neon;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 1s infinite;
+}
+.drum{
+    height: 100px;
+    width: 100px;
+    color: aliceblue;
+    font-size: 60px;
+    font-weight: bolder;
+    background-color: black;
+    margin-right: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.1s;
+    text-shadow: 0 0 10px rgb(0, 255, 255), 
+    0 0 20px rgba(0, 255, 255, 0.7),
+    0 0 30px rgba(0, 255, 255, 0.7),
+    0 0 40px rgba(0, 255, 255, 0.7),
+    0 0 50px rgba(0, 255, 255, 0.7),
+    0 0 60px rgba(0, 255, 255, 0.7),
+    0 0 70px rgba(0, 255, 255, 0.7);
+}
+.drum:active{
+    box-shadow: 0px 3px 4px 0px rgb(4, 232, 253);
+    opacity: 0.5;
+    transform: scale(0.9);
+    text-shadow: 0 0 10px rgb(0, 255, 238), 
+    0 0 20px rgba(0, 225, 255, 0.7),
+    0 0 30px rgba(0, 248, 248, 0.7),
+    0 0 40px rgba(0, 174, 249, 0.7),
+    0 0 50px rgba(0, 183, 255, 0.7),
+    0 0 60px rgba(0, 221, 255, 0.7),
+    0 0 70px rgba(0, 213, 255, 0.7);
+}
+.drum:hover {
+    box-shadow: 0 0 10px #00eeff, 0 0 20px #00fff2, 0 0 20px #fff inset;
+}
+.jui{
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+}
+.pressed{
+    box-shadow: 0px 3px 4px 0px rgb(4, 232, 253);
+    opacity: 0.5;
+    transform: scale(0.9);
+}

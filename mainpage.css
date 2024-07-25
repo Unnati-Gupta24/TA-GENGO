@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    height: 470vh;
+    background-repeat: no-repeat;
+    color:white;
+}
+.navbar {
+    background-color: #000;
+  background-image: radial-gradient(circle, rgb(29, 29, 29) 0%, #000000 100%);
+  box-shadow: 0 0 80px #0ff, 0 0 40px #0ff, 0 0 30px #0ff, 0 0 20px #0ff;
+    overflow: hidden;
+    box-shadow: 3px 3px 6px rgb(53, 51, 66);
+}
+.u{
+    text-shadow: 3px 3px 6px rgb(244, 2, 252),-3px -3px 6px rgb(255, 0, 221);
+    margin-left: 10px;
+}
+.u:hover{
+    text-shadow: 3px 3px 6px aqua,-3px -3px 6px aqua;
+}
+.i{
+    text-shadow: 3px 3px 6px aqua,-3px -3px 6px aqua;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    font-weight: 600;
+    font-family: arial;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar .toggle-btn {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    body{
+        background-color: black;
+        height: 650vh;
+        width: 100vw;
+        text-align: center;
+    }
+    .logo{
+        margin-left: 60px;
+    }
+    .c{
+        margin-left: -80px;
+    }
+    .foxo{
+        margin-bottom: 80px;
+        margin-left: 150px;
+    }
+    .flip-card{
+        margin-bottom: 10vh;
+    }
+    .jio{
+        margin-left: -50px;
+    }
+}
+.att{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.flip-card {
+    background: transparent;
+    width: 300px;
+    height: 50vh;
+    perspective: 1000px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    min-width: 300px;
+    min-height: 100%;
+    backface-visibility: hidden; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black, 2px 2px 6px black,-2px -2px 4px black, -2px -2px 4px black;
+}
+.flip-card-front {
+    box-shadow: 0 5px 50px 0  aqua inset, 
+                0 5px 40px 0  aqua,
+                0 5px 50px 0  aqua inset,
+                0 5px 40px 0  aqua;
+    text-shadow: 0 0 5px  aqua, 0 0 5px  aqua;
+    color: azure;
+    cursor: pointer;
+    background-image: radial-gradient(rgb(88, 88, 88),rgb(49, 50, 50),rgb(17, 17, 17),rgb(0, 0, 0));
+}
+.flip-card-back {
+    box-shadow: 0 5px 50px 0  rgb(255, 0, 162) inset, 
+                0 5px 40px 0  rgb(255, 0, 238),
+                0 5px 50px 0  rgb(255, 0, 242) inset,
+                0 5px 40px 0  rgb(255, 0, 238);
+    text-shadow: 0 0 5px  rgb(255, 0, 255), 0 0 5px  rgb(255, 0, 208);
+    color: azure;
+    cursor: pointer;
+    background-image: radial-gradient(rgb(88, 88, 88),rgb(49, 50, 50),rgb(17, 17, 17),rgb(0, 0, 0));
+     transform: rotateY(180deg);   
+}
+.logo{
+    font-size: 80px;
+    font-weight: bolder;
+    margin-top: 10vh;
+    animation: slideleft;
+    animation-duration: 3s;
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    animation: flicker 1.5s infinite alternate;
+    text-shadow: 0 0 10px rgb(0, 255, 255), 
+                 0 0 20px rgba(0, 255, 255, 0.7),
+                 0 0 30px rgba(0, 255, 255, 0.7),
+                 0 0 40px rgba(0, 255, 255, 0.7),
+                 0 0 50px rgba(0, 255, 255, 0.7),
+                 0 0 60px rgba(0, 255, 255, 0.7),
+                 0 0 70px rgba(0, 255, 255, 0.7);
+}
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20vh;
+    flex-wrap: wrap;
+}
+.c{
+    background-image: url("./images/gyu.jpg");
+    background-repeat: no-repeat;
+    margin-top: 4px;
+}
+.bigimg{
+    background-image: url("./images/nj.png");
+    height: 300px;
+    width: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 18px;
+    animation: updown;
+    animation-duration: 3s;
+}
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+background: #333333;
+background: linear-gradient(0deg, #333333, #010101);
+    width: 100vw;
+}
+
+.contact-form {
+    background-color: transparent;
+    padding: 30px;
+    width: 350px;
+    margin-right: 30px;
+}
+
+.contact-form h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    padding: 30px;
+    width: 300px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.contact-info h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.contact-info ul li i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-section {
+        padding: 10px;
+        height: 1000px;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 70%;
+        max-width: none;
+        margin-right: 0;
+    }
+
+    .contact-form {
+        margin-bottom: 30px;
+    }
+}
+.jo{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.jio{
+    margin:60px;
+    font-family: arial;
+    background-image: url("./images/jkk.jpg");
+    background-size: contain;
+    width: 100vw;
+    padding-left: 50px;
+    margin-left: -10px;
+    box-shadow: inset 4px 4px 16px 20px black, inset -4px -4px 16px 20px black;
+}
+.kio{
+    margin-left: 20px;
+    font-family: arial;
+    animation: slideright;
+    animation-duration: 3s;
+    color: aliceblue;
+}
+.scroll{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: hidden;
+    overflow-x: auto;
+    padding-right: 50px;
+}
+.scroll::-webkit-scrollbar{
+    width: 0;
+}
+.s{
+    min-width: 300px;
+    min-height: 200px;                                         
+    margin-right: 50px;
+    text-align: center;
+    font-family: arial;
+}
+.soso{
+    width: 400px;
+    height: 100px;
+    background-color: rgb(32, 31, 31);
+    border: 3px solid aqua;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    animation: turnaround;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+.soso:hover{
+    box-shadow: 0 5px 50px 0  rgb(255, 0, 200) inset, 
+                0 5px 50px 0  rgb(255, 0, 234),
+                0 5px 50px 0  rgb(255, 0, 242) inset,
+                0 5px 50px 0  rgb(255, 0, 255);
+    text-shadow: 0 0 5px  rgb(255, 0, 242), 0 0 5px  rgb(255, 0, 179);
+    color: azure;
+    cursor: pointer;
+    background-image: radial-gradient(rgb(88, 88, 88),rgb(49, 50, 50),rgb(17, 17, 17),rgb(0, 0, 0));
+}
+.soso:active{
+    transform:scale(0.8);
+}
+.kl{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+}
+.rato{
+    background-image: url("./images/mouse.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    animation: updown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.yoi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.foxo{
+    background-image: url("./images/foxy.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    margin-top: 90px;
+    margin-left: -15px;
+    animation: slideright;
+    animation-duration: 3s;
+}
+.bd{
+    background-image: url("./images/parr.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    animation: slideright;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+.kj{
+    text-align: center;
+    font-size: 50px;
+    font-family: arial;
+    margin-top: 30px;
+    color: #fff; /* Text color */
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(2, 244, 14), 0 0 50px rgb(0, 255, 55), 0 0 60px rgb(0, 255, 4), 0 0 70px rgb(4, 113, 24), 0 0 80px rgb(11, 56, 15);
+    animation: slideleft 3s;
+}
+.sl{
+    background-image: url("./images/sloth.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    animation: slideright;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+.cat{
+    background-image: url("./images/cat.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    animation: slideright;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+@keyframes slidetop{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideright{
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideleft{
+    0%{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes updown{
+    0%{
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(30px);
+    }
+}
+@keyframes turnaround {
+    50%{transform: rotateY(180deg);}
+}
+
+.buton:hover {
+    background: #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+                0 0 30px rgba(0, 242, 255, 0.5),
+                0 0 40px rgba(38, 0, 255, 0.5),
+                0 0 50px rgba(0, 255, 255, 0.5),
+                0 0 60px rgba(21, 0, 255, 0.5),
+                0 0 70px rgba(0, 255, 255, 0.5),
+                0 0 80px rgba(38, 0, 255, 0.5);
+    transition: 0.2s;
+}
+.buton:active{
+    transform: scale(0.8);
+}
+.b{
+    text-shadow: 3px 3px 6px rgb(255, 0, 225),-3px -3px 6px rgb(0, 225, 255);
+}
+.jd{
+    box-shadow: 2px 2px 4px aqua;
+    border: 2px solid rgb(255, 0, 221)
+}
+.se{
+    background-image: url(./images/nuu.jpg);
+    box-shadow: inset 4px 4px 16px 20px black, inset -4px -4px 16px 20px black;
+}
